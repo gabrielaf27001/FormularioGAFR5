@@ -1,0 +1,72 @@
+
+body{
+
+ background:-webkit-linear-gradient(white,gray);
+
+}
+
+table{
+
+    background:-webkit-linear-gradient(turquoise,white);
+    font-color:#192287;
+    font-size:19px;
+    font-family:italic;
+    margin-left:500px;
+    margin-top:1px;
+    margin-right:50px;
+border:35px;
+border-color:#009878;
+}
+
+h1{
+    font-family:bold;
+    font-size:26px; 
+    text-align:center;
+    color:black;
+    background:-webkit-linear-gradient(white,aqua);
+    margin-top:2px;
+    }
+
+h2{
+
+
+	font-size:25px;
+font-family:serif;
+background:#008989;
+}
+
+h3{
+margin-left:45px;
+
+}
+tr{
+
+
+font-size:12px;
+
+}
+p{
+	font-color:black;
+
+font-family:italic;
+}
+
+
+img{
+	border-radius:50%;
+
+margin:23px;}
+
+.anios
+
+{
+background:cyan;
+font-size:23px;
+
+}
+
+.anioseducacion{
+
+background:#006655578;
+font-size:23px;
+}
