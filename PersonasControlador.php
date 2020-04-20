@@ -59,7 +59,9 @@ if($cant>0)
 }
 else	{
 
-$sql = "UPDATE datos_personales SET nombres='".$nombres."',apellidos='".$apellidos." WHERE id=".$id;
+$sql = "UPDATE datos_personales SET nombres='".$nombres."',apellidos='".$apellidos.",dni=".$id." WHERE id=".$id_persona;
+$res=mysqli_query($conex,$sql);
+	
 if($res)
 		{
 
