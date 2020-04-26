@@ -1,0 +1,30 @@
+
+
+table{
+
+    background:-webkit-linear-gradient(white,indigo);
+    font-size:21px;
+    margin-left:300px;
+    margin-top:1px;
+    margin-right:60px;
+align-self: all;
+}
+
+h2{
+    font-family:italic;
+    font-size:24px; 
+    text-align:center;
+    color:white;
+    margin-top:9px;
+
+    }
+
+td{
+
+    background:-webkit-linear-gradient(purple,darkblue);
+    border-color: black;
+    position: absolute;
+}
+.a{
+background: blue;
+}
