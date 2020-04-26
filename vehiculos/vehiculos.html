@@ -1,0 +1,77 @@
+﻿    <DOCTYPE html>
+<head>
+    <title> </title>
+    <style type="text/css">
+        
+table{
+
+    background:-webkit-linear-gradient(indigo,orchid,indigo);
+    font-size:21px;
+    margin-left:300px;
+    margin-top:1px;
+    margin-right:60px;
+align-self: all;
+}
+
+h2{
+    font-family:italic;
+    font-size:24px; 
+    text-align:center;
+    color:white;
+    margin-top:9px;
+
+    }
+
+td{
+
+    background:-webkit-linear-gradient(purple,darkblue);
+    border-color: black;
+    position: absolute;
+}
+.a{
+background: blue;
+}
+
+    </style>
+    </head>
+  
+    <body>
+
+        <form action="recibir_formulario.php" method ="post" name ="formulario">
+    <table width ="490px"  height = "450 px" border="2" align="center" >
+
+<th>
+    
+        </div>
+
+        <h2>Registrar Vehiculo</h2>
+        
+
+	<div>
+	 <b> Marca:</b>
+	<input type="text"   name="marca" id="marca" placeholder="Audi" required>
+</div>
+
+	
+     <b>Modelo</b>
+     <input type="text"  name="modelo" id="modelo" placeholder="A4"  required>
+
+
+    <div>
+     <b> Placa:</b>
+    <input type="text" name="placa" id="placa" placeholder="AHM787"  required>
+</div>
+	<b> Número de Caucho:</b>
+	<input type="text" name="num_caucho" id="num_caucho" placeholder="14 "  required> 
+	</div>
+<div>
+    
+    <b> Numero de Puertas:</b>
+    <input type="number" name="num_puertas" id="num_puertas" placeholder=" 4 " required> 
+<input type="hidden" name="id_vehiculo" id="id_vehiculo">
+</div>
+ <input type="submit" name="submit" id="submit" value="Enviar">
+    </table>
+</form>
+    </body>
+</html>
