@@ -1,0 +1,62 @@
+public function index(){
+$db=new clasedb();
+$conex=$db-> conectar();
+$sql="SELECT * FROM datos_personales";
+$res=mysqli_query($conex,$sql);
+$campos=mysqli_num_fields($res);
+$filas=mysqli_num_rows($res);
+$i=0;
+$datos[]=array(); 
+while($data=mysqli_fetch_array($res)){
+	for($j=0; $j<$campos; $j++){
+		$datos[$i][$j]=$data[$j];	}
+	$i++;}
+mysqli_close($conex);
+header("Location: index.php?filas=".$filas."&campos=".$campos."&data=".serialize($datos));
+}
+
+
+
+linea 1:La funcion pública index, puede ser llamada interna o externamente de la clase a la que pertenece
+
+linea 2:se crea un nuevo objeto de la clasedb
+
+linea 3: la función conectar devuelve la respuesta de la base de datos donde se realiza la consulta
+
+
+línea 4: A través de la consulta SELECT * FROM se extraen los Datos de la tabla datos_personales, los cuales se guardan en la variable sql
+
+linea 5: La función mysqli_query permite extraer los datos que se realizan por la consulta SELECT
+la variable $res contiene la consulta realizada
+
+
+Linea 6: en la variable campos se iguala a la función mysqli_num_fields ya que devuelve la cantidad de campos que contienen los registros de la tabla
+
+linea 7: la función mysqli_num_rows devuelve el número de filas que contiene la tabla, el mismo se guarda en la variable $filas.
+linea 8:  la variable  $i se inializa con el valor en cero
+
+
+linea 9: la funcion array() permite convertir los datos en un array asociativo
+
+
+linea 10: el ciclo while se ejecuta hasta que la función  mysqli_fetch_array devuelva el valor booleano false
+
+
+
+linea 11:se usan ciclos anidados para crear una matriz, inicializando la variable j en cero, la cual se incrementará hasta que su valor sea menor al de la variable campos
+linea 12:
+* se crea un array bidimensional para formar las columnas y las filas
+* el  array data[$j] almacena la posición del valor de los datos que se almacenan en el array 
+ * el array datos[ $i][$j],  almacena los valores de las columnas y forma columnas con la variable j y las filas con la variable i
+
+
+
+linea 13:se incrementa  el valor de la variable i segun cada vuelta que realiza
+el ciclo, esta variable almacena la posición de la fila del array datos[$i][$j]
+
+linea 14:la funcion mysqli_close cierra la conexión con la base de datos
+
+linea 15:a través de la función header se envían los valores de las variables campos y filas
+La variable data almacena el array datos de la matriz
+
+
