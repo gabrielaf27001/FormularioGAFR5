@@ -1,31 +1,31 @@
-linea 93: La función actualizar puede ser accedida desde cualquier parte del documento, debido a su visibilidad pública
-linea 94: llaves de apertura de la función actualizar.
-linea 95: la función extract ($_POST) permite extraer los datos que se envían al formulario.
+linea 93: La funciÃ³n actualizar puede ser accedida desde cualquier parte del documento, debido a su visibilidad pÃºblica
+linea 94: llaves de apertura de la funciÃ³n actualizar.
+linea 95: la funciÃ³n extract ($_POST) permite extraer los datos que se envÃ­an al formulario.
 linea 96 se crea un objeto de la clase clasedb,
-linea 97: se realiza la conexión con la base de datos.
-linea 99: se realiza . La clausula WHERE permite realizar la operación
+linea 97: se realiza la conexiÃ³n con la base de datos
+linea 99: se realiza la consulta en la tabla datos_personales . La clausula WHERE permite realizar la operaciÃ³n sobre el id y la cedula seleccionados.
 linea 101: La consulta a la base de datos se almacena en la variable $res.
 Linea 102: la variable $cant almacena el numero de filas de la tabla
 Linea 103:la senetencia if indica si la variable $cant es mayor a 0
 linea 104: cierre del codigo PHP
-linea 105: se utiliza la etiqueta <script> para escribir código de JavaScript
-linea 106: si se cumple la condición de que la variable $cant es mayor a 0, se imprime un mensaje 
+linea 105: se utiliza la etiqueta <script> para escribir cÃ³digo de JavaScript
+linea 106: si se cumple la condiciÃ³n de que la variable $cant es mayor a 0, se imprime un mensaje 
 Linea 107 : Mediante el atributo location de Javascript, se redirige al usuaroo al archivo de la vista.
-Linea 108: cierre de código JavaScript 
-linea 109: apertura de código PHP
+Linea 108: cierre de cÃ³digo JavaScript 
+linea 109: apertura de cÃ³digo PHP
 linea 110: si no se cumple la condicion antes descrita, se ejecutan la instrucciones siguientes
-linea 111: se procede a realizar la actualizacion de los datos mediante la función Update, según el id que haya sido selecionado por el usuario.
+linea 111: se procede a realizar la actualizacion de los datos mediante la funciÃ³n Update, segÃºn el id que haya sido selecionado por el usuario.
 linea 113:La consulta a la base de datos se almacena en la variable $res
 linea 114: la sentencia if contiene la respuesta de la consulta en la base de datos
-linea 115:cierre de código PHP
-linea 116:se utiliza la etiqueta <script> para escribir código de JavaScript
-linea 117: mediante la funcion de javaScript "alert" se imprime un mensaje que indica que el registro se modificó
+linea 115:cierre de cÃ³digo PHP
+linea 116:se utiliza la etiqueta <script> para escribir cÃ³digo de JavaScript
+linea 117: mediante la funcion de javaScript "alert" se imprime un mensaje que indica que el registro se modificÃ³
 linea 118: Mediante el atributo location, se redidige al usuario a la vista.
 linea 119: cierre de codigo JavaScript
-linea 120: Apertura de  código PHP
+linea 120: Apertura de  cÃ³digo PHP
 linea 121: si no se cumple la condicion antes descrita, se ejecutan las instrucciones siguientes
-linea 122:cierre de código PHP
-linea 123:Apertura de código en JavaScript
+linea 122:cierre de cÃ³digo PHP
+linea 123:Apertura de cÃ³digo en JavaScript
 linea 124: si la variable $res, se imprime un mensaje que indica que el registro no fue modificado.
 linea 125:Mediante el atributo location, se redidige al usuario a la vista
-linea 126: cierre de Código de JavaScript con la etiqueta <script>
+linea 126: cierre de CÃ³digo de JavaScript con la etiqueta <script>
