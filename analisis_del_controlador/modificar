@@ -1,0 +1,8 @@
+﻿Linea 82: la función modificar tiene visibilidad pública, por lo tanto se puede acceder a ella desde cualquier parte del documento.
+linea 83: la función ($_Request) permite recuperar los datos que hayan sido enviados.
+linea 84: Se crea un objeto de la clase "clasedb" y se almacena en la variable $db. esto se realiza para poder utilizarla
+linea 85: en la variable $conex, se almacena el llamada a la funcion conectar() para ejecutar la conexion en la base de datos.
+linea 87: se realiza la consulta en la tabla datos_personales, la clausula Where permite seleccionar el campo al cual pertenece el id seleccionado.
+linea 88: la función mysqli_query permite realizar la consulta en la base de datos, la cual se almacena en la variable $res.
+linea 89: mediante la función mysqli_fetch_array se extraen los datos enviados en un array asociativo.
+linea 91: A través de la función header, se envian al archivo editar.php los datos contenidos en la variable $data
