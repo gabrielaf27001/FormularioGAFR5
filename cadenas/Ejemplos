@@ -1,0 +1,168 @@
+<?php
+
+// round
+echo"<i> función Round</i>";
+echo "<br>";
+echo round (8.3, 3, PHP_ROUND_HALF_ODD);
+echo "<br>";
+echo round (2.22, 5,PHP_ROUND_HALF_EVEN);
+echo "<br>";
+echo round (1.32, 5,PHP_ROUND_HALF_UP);
+//floor
+echo"<br><i> función floor</i>";
+echo "<br>";
+
+echo floor(-7.9);
+echo "<br>";
+echo floor(-2.3);
+echo "<br>";
+echo floor(-3.2);
+//ceil
+echo "<br><i> Funcion ceil</i>";
+echo "<br>";
+echo ceil(4.7);
+echo ceil(6.6);
+echo ceil(48.8);
+echo "<br>";
+// ucwords()
+echo"<i> función ucwords</i>";
+echo "<br>";
+$string="hola mundo";
+$r= ucwords($string);
+echo "<br>$r";
+    $string="hola, ¿ como estas? ";
+$r= ucwords($string);
+echo "<br>$r";
+$string="abcdef";
+$r= ucwords($string);
+echo "<br>$r";
+//ucfirst
+echo"<br><i> función ucfirst</i>";
+echo "<br>";
+$cadena="abcde ";
+echo "<br>";
+$ucfirst= ucfirst($cadena);
+
+echo $ucfirst;
+//count
+echo "<br><i> Funcion count";
+echo "<br>";
+$arr[]="3,34,3,67";
+$arr1[]="3,32";
+$arr2[]="12,30";
+$res= count($arr);
+count($arr1);
+echo "<br>$res" ;
+echo "<br>$res" ;
+
+echo "<br>$res" ;
+
+echo"<br><b> Funcion strtoupper</b>";
+echo "<br>";
+$cad="Italia";
+$strtoupper= strtoupper($cad);
+echo $strtoupper;
+echo "<br>";
+$cad2="Irlanda";
+$strtoupper= strtoupper($cad2);
+echo"<br> $strtoupper";
+echo "<br>";
+$cad3="Turquia";
+$strtoupper= strtoupper($cad3);
+echo $strtoupper;
+
+echo "<br><b> Funcion strtolower<b>";
+echo "<br>";
+$cad2="Francia";
+$strtolower= strtolower($cad2);
+echo $strtolower;
+
+
+echo"<br><i> función var_dump</i>";
+echo "<br>";
+$expression1="ejemplo1";
+$var_dump= var_dump($expression1);
+echo $var_dump;
+$expression2="ejemplo2"
+$var_dump= var_dump($expression2);
+echo $var_dump;
+$expression3="ejemplo3";
+$var_dump= var_dump($expression3);
+echo $var_dump;
+
+echo "<br> Funcion ucfirst";
+echo "<br>";
+$cadena="Paises: francia,rusia,españa";
+$ucfirst=ucwords($cadena);
+echo "<br>$ucfirst";
+$cadena="turquia";
+$ucfirst=ucwords($cadena);
+echo "<br>$ucfirst";
+$cadena="madrid";
+$ucfirst=ucwords($cadena);
+echo "<br>$ucfirst";
+//rand
+Echo "<br>";
+echo"<h4> función rand</h4>";
+echo "<br> generar clave:";
+$clave=rand();
+echo $clave;
+echo "<br>";
+ECHO "<br> Numero aleatorio del 1 al 100";
+echo "<br>";
+$rrand= rand(1,100);
+
+echo $rrand;
+ECHO "<br> Numero aleatorio del 1 al 1000";
+$rand2= rand(1,1000);
+echo "<br>";
+echo "$rand2";
+echo "<br>";
+
+echo "<b>funcion implode<b>";
+echo "<br>";
+$colores=array('celeste','turquesa','fucsia');
+$rcolores=implode(",",$colores);
+echo "<br>";
+echo $rcolores;
+
+echo "<br>";
+
+$ciudades=array('Copenhague','Roma','Paris');
+$r=implode(",",$ciudades);
+echo "<br>";
+echo $r;
+
+$array=array("val1","val2");
+echo "<br>";
+print_r($array);
+$array=implode(",",$array);
+echo "<br>";
+print ($array);
+echo "<br>";
+
+echo"<b> Funcion explode";
+echo "<br>";
+$lista="España, Escocia, ";
+$p=explode(" " ,$lista);
+echo "<br>paises";
+echo "<br>1. $p[0]";
+echo "<br>2. $p[1]";
+
+$cad="hola,mundo ";
+$r_explode=explode(" " ,$cad);
+echo "<br>$r_explode";
+
+echo"<b> Funcion strlen <b>";
+$strlen=strlen("abc");
+$strlen1=strlen("abcde");
+$strlen2=strlen("hola mundo");
+echo "<br>la primera frase tiene $strlen caracteres ";
+echo "<br>la segunda frase tiene $strlen1 caracteres";
+echo "<br>la tercera frase tiene $strlen2 caracteres";
+
+
+
+
+
+?>
