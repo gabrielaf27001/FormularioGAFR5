@@ -4,8 +4,11 @@ extract($_REQUEST);
 $db=new clasedb();
 $conex=$db->conectar();
 $sql="CREATE TABLE inmuebles (id int (11) NOT NULL PRIMARY KEY AUTO_INCREMENT, idem VARCHAR (50) NOT NULL, estacionamiento ENUM('Si','No'), status ENUM('Ocupado','Desocupado','Mantenimiento'), tipo ENUM ('Casa','Apartamento','Chalet','Quinta','Otro'), cod_postal VARCHAR  (5));";
-$sql="ALTER TABLE add UNIQUE (idem)";
+
+#$sql="ALTER TABLE add UNIQUE (idem)";
+
 $result=mysqli_query($conex,$sql);
+
 if ($result){
     echo "tabla creada con éxito";
 }
@@ -46,7 +49,7 @@ echo "<br>casa registrada";
 $casasReg++;
 $tipo="Casa";
 $cod_postal=random_int(1111,9000);
-$idem=rand(1,500)
+$idem=rand(1,500);
 $r=rand(1,3);
 if ($r==1)
 $status="Mantenimiento";
@@ -66,7 +69,7 @@ $apartamentoReg++;
 
 $tipo="Apartamento";
 $cod_postal=random_int(1111,9000); 
-$idem=rand(1,500)
+$idem=rand(1,500);
 $r=rand(1,3);
 if ($r==1)
 $status="Mantenimiento";
@@ -105,7 +108,7 @@ echo "<br>vivienda registrada";
 $cod_postal=random_int(1111,9000); 
 $tipo="Otro";
 $otrosReg++;
-$idem=rand(1,500)
+$idem=rand(1,500);
 $r=rand(1,3);
 if ($r==1)
 $status="Mantenimiento";
@@ -131,7 +134,8 @@ echo "<br> registros totales: $total";
 
 $sql="INSERT INTO inmuebles (estacionamiento,tipo,status,cod_postal)
 VALUES('".$estacionamiento."','".$tipo."','".$status."','".$cod_postal."')";
-
+$db=new clasedb();
+$conex=$db->conectar();
 $resultado=mysqli_query($conex,$sql);
     
 if ($resultado) {
